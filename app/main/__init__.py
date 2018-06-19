@@ -12,10 +12,3 @@ app.config.from_pyfile('config.py')
 
 from app import views
 
-# @app.route('/')
-# def index():
-#     return '<h1>Hello World</h1>'
-
-
-# if __name__ == '__main__':
-#     app.run(debug = True)

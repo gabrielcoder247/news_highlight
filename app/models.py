@@ -13,8 +13,10 @@ class Source:
                 3.description
                 4.url
                 5.category
+                
 
         self.id = id
         self.name = name
         self.description = description
-        self.category = category        
+        self.category = category   
+             
