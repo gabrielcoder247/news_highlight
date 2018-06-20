@@ -21,7 +21,7 @@ def get_sources(category):
     '''
     Function that gets the json response to our url request
     '''
-    get_sources_url = source_base_url.format(category):
+    get_sources_url = source_base_url.format(category)
     with urllib.request.urlopen(get_sources_url,data = None) as url:
         get_sources_data = url.read()
         get_source_response = json.loads(get_sources_data)
@@ -32,7 +32,7 @@ def get_sources(category):
             sources_results = process_sources(sources_results_list)
     return sources_results
 
-def process_sources(sources_results)
+def process_sources(sources_results):
         '''
         Function that processes the sources result and tranforms them to the list of objects
     
@@ -52,8 +52,34 @@ def process_sources(sources_results)
             category = source_item.get('category')
             sources_list.append(source_object)
 
-            
-        return sources_list    
+
+        return sources_list  
+
+    
+def get_articles(sources):
+    '''
+    Function that gets the json response to our url request
+    '''
+    get_articles_url = article_base_url.format(source,api_key)
+    with urllib.request.urlopen(get_articles_url,data=None) as url:
+        get_articles_data = url.read()
+        get_articles_response = json.loads_articles_data)
+        articles_results = None
+
+
+        if get_articles_response['artilces']:
+            articles_results = process_articles(articles_results_list)
+            articles_results = process_articles(articles_results_list)
+            return articles_results
+
+    def process_articles(articles_results):
+        '''
+        Functions that processes the artcles and results and transforms them to a list of Objects.
+        '''
+                
+
+
+
                   
 
 
