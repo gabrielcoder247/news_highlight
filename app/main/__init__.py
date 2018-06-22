@@ -1,14 +1,23 @@
-from flask import Flask
-from config import DevConfig
+from flask import Blueprint
 
-#Initialize application
+main = Blueprint('main',__name__)
 
-app = Flask(__name__,instance_relative_config = True)
 
-#setting up configuration
+from . import views
 
-app.config.from_object(DevConfig)
-app.config.from_pyfile('config.py')
 
-from app import views
+# from flask import Flask
+# from config import DevConfig
+
+
+# #Initialize application
+
+# app = Flask(__name__,instance_relative_config = True)
+
+# #setting up configuration
+
+# app.config.from_object(DevConfig)
+# app.config.from_pyfile('config.py')
+
+# from app import views
 

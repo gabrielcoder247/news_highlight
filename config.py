@@ -5,7 +5,8 @@ class Config:
     '''
     NEWS_SOURCES_BASE_URL = 'https://newsapi.org/v1/sources?language=en&category={}'
     NEWS_ARTICLES_BASE_URL = 'https://newsapi.org/v1/articles?source={}&apiKey={}'
-    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+    NEWS_API_KEY = '3e815da99a744f5e8b90abb25bcdf55f'
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
 
 class ProdConfig(Config):
     '''
