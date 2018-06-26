@@ -1,5 +1,5 @@
 import urllib.request,json
-from .models import Source
+from .models import Source,Article
 from . import main
 
 # Getting Api Key
@@ -31,7 +31,7 @@ def get_sources(category):
 		if get_sources_response['sources']:
 			sources_results_list = get_sources_response['sources']
 			sources_results = process_sources(sources_results_list)
-
+	print(sources_results)
 	return sources_results
 
 def process_sources(sources_results):
