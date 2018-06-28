@@ -17,7 +17,7 @@ def index():
 
 	title = 'Home - Find the latest news highlights'
 
-	return render_template('index.html', title=title,business=business_sources,general=general_sources,entertainment=entertainment_sources,technology=technology_sources)
+	return render_template('index.html',title=title,business=business_sources,general=general_sources,entertainment=entertainment_sources,technology=technology_sources)
 
 @main.route('/source/<id>')
 def source(id):
