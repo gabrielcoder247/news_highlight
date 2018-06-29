@@ -12,7 +12,31 @@ mobile phones, laptops and desktops computers
 m 
 ## Technologies used
 python 3.6
-pip
+pipacace 
+
+### Prerequisites
+
+must have an internet connected to your device
+
+```
+mobile phones, laptops and desktops computers
+```ace 
+
+### Prerequisites
+
+must have an internet connected to your device
+
+```
+mobile phones, laptops and desktops computers
+```e 
+
+### Prerequisites
+
+must have an internet connected to your device
+
+```
+mobile phones, laptops and desktops computers
+```
 boostsrap
 macro
 
